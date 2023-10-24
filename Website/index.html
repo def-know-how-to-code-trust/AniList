@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ANI</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="staticIMG\Screenshot 2023-08-08 191738.png"type="image/x-icon">
+</head>
+
+<body onload="generateGrid();logstatus()">
+    <nav>
+        <h1>ANI</h1>
+        <div>
+            <a href="#" onclick="goToHomePage()" id="Home">Home</a>
+            <a href="#" onclick="goToLogInPage()" id="login">Login</a>
+            <a href="#" onclick="goToSignUpPage()" id="signup">Sign Up</a>
+            <a href="#" onclick="logout()" id="logout">Logout</a>
+            <a href="#" onclick="goTogoToProfilePage()" id="profile">Profile</a>
+        </div>
+    </nav>
+
+    <p id="welcome-message">Welcome to ANI!</p>
+    <div class="grid-container" id="grid-container">
+
+    </div>
+    <script src="script/animedb.js"></script>
+    <script src="script/log.js"></script>
+    <script src="script/nav.js"></script>
+</body>
+
+</html>

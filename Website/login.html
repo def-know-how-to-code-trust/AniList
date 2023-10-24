@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Window</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="icon" href="staticIMG\Screenshot 2023-08-08 191738.png"type="image/x-icon">
+</head>
+<body onload="logstatus()" >
+    <nav>
+        <h1>ANI</h1>
+        <div>
+            <a href="#" onclick="goToHomePage()" id="Home">Home</a>
+            <a href="#" onclick="goToLogInPage()" id="login">Login</a>
+            <a href="#" onclick="goToSignUpPage()" id="signup">Sign Up</a>
+            <a href="#" onclick="logout()" id="logout">Logout</a>
+            <a href="#" onclick="goTogoToProfilePage()" id="profile">Profile</a>
+        </div>
+    </nav>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button id="login-button">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script/animedb.js"></script>
+    <script src="script/nav.js"></script>
+    <script src="script/log.js"></script>
+</body>
+</html>

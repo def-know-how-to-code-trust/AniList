@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head onload="chekLog()">
+    <meta charset="UTF-8">
+    <title>ANI</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="staticIMG\Screenshot 2023-08-08 191738.png"type="image/x-icon">
+
+    
+</head>
+<body onload="displayAnimeDetails();displayAnimeTRAN();logstatus()">
+    <nav>
+        <h1>ANI</h1>
+        <div>
+            <a href="#" onclick="goToHomePage()" id="Home">Home</a>
+            <a href="#" onclick="goToLogInPage()" id="login">Login</a>
+            <a href="#" onclick="goToSignUpPage()" id="signup">Sign Up</a>
+            <a href="#" onclick="logout()" id="logout">Logout</a>
+            <a href="#" onclick="goTogoToProfilePage()" id="profile">Profile</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="image">
+            <img src="" alt="Anime Image">
+        </div>
+        <div class="details">
+            <div>Original</div>
+            <div class="title"></div>
+            <div class="eng"></div>
+            <div class="synopsis"></div>
+            <div class="info">
+                <p><strong>Studio:</strong> <span class="studio"></span></p>
+                <p><strong>Duration:</strong> <span class="duration"></span></p>
+                <p><strong>Episodes:</strong> <span class="episodes"></span></p>
+                <p><strong>Score:</strong> <span class="score"></span></p>
+                <p><strong>Rating:</strong> <span class="rating"></span></p>
+                <p><strong>Type:</strong> <span class="type"></span></p>
+                <p><strong>Release Date:</strong> <span class="release-date"></span></p>
+                <p><strong>Category:</strong> <span class="category"></span></p>
+                <p><strong>Airing Status:</strong> <span class="airing-status"></span></p>
+            </div>
+        </div>
+    </div>
+    <div class="containerT">
+        <div class="detailsTranslate">
+            <div>Translated</div>
+            <div class="titleT"></div>
+            <div class="engT">Please login to recieve translation</div>
+            <div class="synopsisT"></div>
+            <div class="infoT">
+                <p><strong>Studio:</strong> <span class="studioT"></span></p>
+                <p><strong>Duration:</strong> <span class="durationT"></span></p>
+                <p><strong>Episodes:</strong> <span class="episodesT"></span></p>
+                <p><strong>Score:</strong> <span class="scoreT"></span></p>
+                <p><strong>Rating:</strong> <span class="ratingT"></span></p>
+                <p><strong>Type:</strong> <span class="typeT"></span></p>
+                <p><strong>Release Date:</strong> <span class="release-dateT"></span></p>
+                <p><strong>Category:</strong> <span class="categoryT"></span></p>
+                <p><strong>Airing Status:</strong> <span class="airing-statusT"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script/animedb.js"></script>
+    <script src="script/nav.js"></script>
+</body>
+
+
+</html>

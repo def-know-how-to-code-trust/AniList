@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ANI</title>
+    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="icon" href="staticIMG\Screenshot 2023-08-08 191738.png"type="image/x-icon">
+</head>
+<body onload="showProfile();logstatus()">
+    <nav>
+        <h1>ANI</h1>
+        <div>
+            <a href="#" onclick="goToHomePage()" id="Home">Home</a>
+            <a href="#" onclick="goToLogInPage()" id="login">Login</a>
+            <a href="#" onclick="goToSignUpPage()" id="signup">Sign Up</a>
+            <a href="#" onclick="logout()" id="logout">Logout</a>
+            <a href="#" onclick="goTogoToProfilePage()" id="profile">Profile</a>
+        </div>
+    </nav>
+    <div id="profile-section">
+        <h2 id="pro-title">Profile</h2>
+        <div id="profile-info">
+            <img id="profile-pic" src="" alt="Profile Picture">
+            <div id="profile-details">
+                <p><strong>Username:</strong> <span id="username"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Language Preference:</strong> <span id="language"></span></p>
+                <button onclick="goToEditProfilePage()">Edit Profile</button>
+                <button onclick="deleteProfile()">Delete Profile</button>
+            </div>
+        </div>
+    </div>
+    <script src="script/log.js"></script>
+    <script src="script/nav.js"></script>
+    <script src="script/profile.js"></script>
+    <script src="script/del.js"></script>
+</body>
+</html>

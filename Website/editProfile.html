@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ANI - Edit Profile</title>
+    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/editprofile.css">
+    <link rel="icon" href="staticIMG\Screenshot 2023-08-08 191738.png"type="image/x-icon">
+</head>
+<body onload="logstatus()">
+    <nav>
+        <h1>ANI</h1>
+        <div>
+            <a href="#" onclick="goToHomePage()" id="Home">Home</a>
+            <a href="#" onclick="goToLogInPage()" id="login">Login</a>
+            <a href="#" onclick="goToSignUpPage()" id="signup">Sign Up</a>
+            <a href="#" onclick="logout()" id="logout">Logout</a>
+            <a href="#" onclick="goToProfilePage()" id="profile">Profile</a>
+        </div>
+    </nav>
+    <div id="edit-profile-section">
+        <h2 id="edit-pro-title">Edit Profile</h2>
+        <form id="edit-profile-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="language">Secondary Language Preference:</label>
+            <select id="language" name="language">
+                <option value="">Choose a Value</option>
+                <option value="es">Español</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+                <option value="zh">中文简体</option>
+                <option value="zh-TW">中文繁體</option>
+                <option value="hi">अरबी</option>
+
+
+            </select><br>
+            <label for="Npassword">New Passwords</label>
+            <input type="Npassword" id="new-password" name="new-password"><br>
+
+            <div class="form-group">
+                <button id="save-button">Save Changes</button>
+            </div>
+        </form>
+    </div>
+    <script src="script/log.js"></script>
+    <script src="script/nav.js"></script>
+    <script src="script/profile.js"></script>
+</body>
+</html>
