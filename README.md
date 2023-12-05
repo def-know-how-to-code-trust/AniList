@@ -13,6 +13,7 @@ Amazon services
 Languges used
  - Python
  - Javascript
+
 Database used
  - DynamoDB
  - SQL with AWS RDS
