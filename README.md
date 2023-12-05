@@ -5,14 +5,14 @@ I have included the presentation slides that i intended to use together with the
 
 
 #services used
-##Amazon services
+*Amazon services
  - Aws Lambda
  - Aws API Gateway
  - Aws Translate
 
-##Languges used
+*Languges used
  - Python
  - Javascript
-##Database used
+*Database used
  - DynamoDB
  - SQL with AWS RDS
